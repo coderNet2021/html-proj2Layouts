@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -20,8 +21,13 @@ body {
   background-color: #f7f7f7;
   padding: 15px; /* not margin bcz we want the background color to be spanned over the space*/
 }
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
 .price {
   font-size: 24px;
+  float: left;
 }
 .shipping {
   font-size: 12px;
@@ -29,6 +35,8 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
 }
 .more-info:link,
 .more-info:visited {
@@ -51,7 +59,6 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 30px;
 }
 .add-cart {
   background-color: black;
@@ -102,4 +109,21 @@ body {
 }
 .color-brown {
   background-color: #885214;
+}
+
+.product-info {
+  /* 825total size - 8border of each side - 250img size -80separation of column . le tout divisee par 2*/
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.product-details {
+  width: 243px;
+  float: left;
+  margin-top: 20px;
+}
+.product-img {
+  float: left;
+  margin-right: 40px;
 }
